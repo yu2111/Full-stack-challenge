@@ -1,58 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Resume</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <h1>Yu Sekiguchi</h1>
-  <img src="./Yu.png" alt="profile picture" style="width: 200px;">
-  <h2>Summary</h2>
-  <p>I’m a full-stack web developer with a unique background in education and a degree in International Business Management. My teaching experience honed my communication and problem-solving skills, while my business studies taught me strategic thinking and teamwork. These diverse experiences have shaped me into a versatile developer who thrives on collaboration and creative problem-solving.</p>
-  <hr>
-  <h2>Education</h2>
-  <ul>
-    <li>Web Development Program - Le Wagon</li>
-    <li>Bachelor's degree, International Business and Management - Binus University</li>
-  </ul>
-  <hr>
-  <h2>Work Experience</h2>
-  <ul>
-    <li>
-      <h3>English teacher - AEON Corp.</h3>
-      <p>2020 - 2024</p>
+  <section>
+    <div class="px-4 py-5 my-5 text-center">
+      <img class="d-block mx-auto mb-4 rounded" src="./Yu.png" alt="" width="300">
+      <h1 class="display-5 fw-bold">Yu Sekiguchi</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">I’m a full-stack web developer with a background in education and a degree in International
+          Business Management. My teaching experience strengthened my communication and problem-solving skills, while my
+          business studies sharpened my strategic thinking and teamwork.</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
+          <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container text-center my-5">
+      <h2>Education</h2>
       <ul>
-        <li>Deliver engaging and educational classes to a diverse range of students, spanning from one-year-olds to retirees, ensuring a dynamic and inclusive learning environment.</li>
-        <li>Effectively utilize the student database to track progress, attendance, and maintain comprehensive records of students' goals and educational background.</li>
+        <li>Web Development Program - Le Wagon</li>
+        <li>Bachelor's degree, International Business and Management - Binus University</li>
       </ul>
-    </li>
-    <li>
-      <h3>English teacher - Berlitz</h3>
-      <p>2019 - 2020</p>
+    </div>
+  </section>
+  <section>
+    <div class="container text-center my-5">
+      <h2>Work Experience</h2>
       <ul>
-        <li>I plan, prepare, and deliver engaging lessons that enhance students' speaking and listening skills, while also supporting their reading and writing abilities.</li>
-        <li>Through interactive activities and discussions, I promote active participation and help students gain confidence in expressing themselves verbally.</li>
+        <li>
+          <h3>English teacher - AEON Corp.</h3>
+          <p>2020 - 2024</p>
+          <ul>
+            <li>Deliver engaging and educational classes to a diverse range of students, spanning from one-year-olds to
+              retirees, ensuring a dynamic and inclusive learning environment.</li>
+            <li>Effectively utilize the student database to track progress, attendance, and maintain comprehensive
+              records
+              of students' goals and educational background.</li>
+          </ul>
+        </li>
+        <li>
+          <h3>English teacher - Berlitz</h3>
+          <p>2019 - 2020</p>
+          <ul>
+            <li>I plan, prepare, and deliver engaging lessons that enhance students' speaking and listening skills,
+              while
+              also supporting their reading and writing abilities.</li>
+            <li>Through interactive activities and discussions, I promote active participation and help students gain
+              confidence in expressing themselves verbally.</li>
+          </ul>
+        </li>
+        <li>
+          <h3> Merchandising Manager - Blibli.com</h3>
+          <p>2018 - 2019</p>
+          <ul>
+            <li> was responsible for the business side of the Click&Collect feature.</li>
+            <li>I took an active role in creating and executing campaigns and promotions to boost awareness and drive
+              sales
+              for both the Click&Collect feature and our merchant partners.</li>
+          </ul>
+        </li>
       </ul>
-    </li>
-    <li>
-      <h3> Merchandising Manager - Blibli.com</h3>
-      <p>2018 - 2019</p>
+      <hr>
+    </div>
+  </section>
+  <section>
+    <div class="container text-center my-5">
+      <h2>Skills</h2>
       <ul>
-        <li> was responsible for the business side of the Click&Collect feature.</li>
-        <li>I took an active role in creating and executing campaigns and promotions to boost awareness and drive sales for both the Click&Collect feature and our merchant partners.</li>
+        <li>Ruby on Rails</li>
+        <li>Git Management</li>
+        <li>Organizational skills</li>
       </ul>
-    </li>
-  </ul>
-  <hr>
-  <h2>Skills</h2>
-  <ul>
-    <li>Ruby on Rails</li>
-    <li>Git Management</li>
-    <li>Organizational skills</li>
-  </ul>
-  <hr>
-  <h2>Other</h2>
-  <footer>© Yu Sekiguchi. All rights reserved.</footer>
+      <hr>
+    </div>
+  </section>
+  <footer class="text-center mb-3">© Yu Sekiguchi. All rights reserved.</footer>
 </body>
+
 </html>
