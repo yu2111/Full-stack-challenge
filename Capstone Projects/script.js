@@ -43,3 +43,13 @@ function getMilk(money) {
 function bmiCalculator(weight, height){
     return Math.round(weight/(height*height));
 }
+
+var name1 = prompt("input your name")
+var name2 = prompt("input her/his name")
+
+function loveCal(name1, name2){
+    var percentage = Math.floor(Math.random()*100);
+    return name1 + " and " + name2 + " is " + percentage + "%"
+}
+
+loveCal(name1, name2);
