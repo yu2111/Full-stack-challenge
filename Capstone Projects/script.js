@@ -71,10 +71,28 @@ function bmiCalculator (weight, height) {
 bmiCalculator(prompt("weight"),prompt("height"));
 
 function leapYear(year) {
-    if (year % 4 !== 0 || year % 4 === 0 && year % 100 === 0 && year % 400 !== 0){
-        return "not a leap year"
-    }
-    if (year % 4 === 0 && year % 100 !== 0 || year % 4 === 0 && year % 100 === 0 && year % 400 === 0) {
-        return "a leap year"
+    // if (year % 4 !== 0 || year % 4 === 0 && year % 100 === 0 && year % 400 !== 0){
+    //     return "not a leap year"
+    // }
+    // if (year % 4 === 0 && year % 100 !== 0 || year % 4 === 0 && year % 100 === 0 && year % 400 === 0) {
+    //     return "a leap year"
+    // }
+    if (year % 400 === 0 || year % 4 === 0 && year % 100 !== 0){
+      return "leap year"
+    } else {
+      return "not a leap year"
     }
 }
+
+var guestList = ["Yu", "Beth", "Saitama", "Goku"];
+
+function approval(name) {
+    if (guestList.includes(name)){
+        alert("hi " + name + ", welcome!")
+    }
+    else{
+        alert("You're not on the guestlist")
+    }
+}
+
+approval(prompt("your name"));
