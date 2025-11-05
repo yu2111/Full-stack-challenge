@@ -127,3 +127,16 @@ function bottlesDown() {
     bottles--;
     console.log("No more bottles of beer on the wall, no more bottles of beer Go to the store and buy some more, 99 bottles of beer on the wall");
 }
+
+function fibonacciGenerator (n) {
+
+    var arr = [0];
+    var number = 1;
+
+    while(n !== arr.length) {
+        arr.push(number)
+        number += arr[arr.length - 2]
+    }
+
+    return arr
+}
