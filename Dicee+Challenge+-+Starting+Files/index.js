@@ -1,4 +1,3 @@
-console.log("hello");
 
 function randomImg(img) {
   var randomNumber = Math.ceil(Math.random()*6);
