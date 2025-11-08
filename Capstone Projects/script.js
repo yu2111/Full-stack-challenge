@@ -160,3 +160,19 @@ undefined
 function cal(num1, num2, operator) {
   return operator(num1, num2)
 }
+
+const houseKeeper1 = {
+    name: "jane",
+    age: 25,
+    experienceYear: 5,
+    clean: ["bathroom", "bedroom", "toilet"]
+}
+
+// constructor function
+
+function HouseKeeper(name, age, experienceYear, clean){
+  this.name = name;
+  this.age = age;
+  this.experienceYear = experienceYear;
+  this.clean = clean;
+};
