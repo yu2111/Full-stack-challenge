@@ -15,12 +15,13 @@ for (let i = 0; i < numberOfDrums; i++) {
     const buttonLetter = this.innerHTML;
 
     makeSound(buttonLetter);
-
+    buttonAnimation(buttonLetter);
  })
 }
 
 document.addEventListener("keydown", (event)=>{
   makeSound(event.key);
+  buttonAnimation(event.key)
 })
 
 function makeSound(key) {
@@ -66,4 +67,14 @@ function makeSound(key) {
         break;
     }
 
+}
+
+
+function buttonAnimation(key) {
+  const button = document.querySelector("."+ key);
+  button.classList.add("pressed");
+
+  setTimeout(function() {
+   button.classList.remove("pressed");
+  }, 100)
 }
