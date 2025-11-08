@@ -2,19 +2,19 @@ console.log("test");
 
 function lifeInWeeks(age) {
 
-/************Don't change the code above************/
+  /************Don't change the code above************/
 
-    var yearLeft = 90 - age;
-    var monthLeft = yearLeft * 12;
-    var weekLeft = yearLeft * 52;
-    var dayLeft = yearLeft * 365;
+  var yearLeft = 90 - age;
+  var monthLeft = yearLeft * 12;
+  var weekLeft = yearLeft * 52;
+  var dayLeft = yearLeft * 365;
 
-    console.log("You have " + dayLeft + " days, " + weekLeft + " weeks, and " + monthLeft + " months left.")
-
-
+  console.log("You have " + dayLeft + " days, " + weekLeft + " weeks, and " + monthLeft + " months left.")
 
 
-/*************Don't change the code below**********/
+
+
+  /*************Don't change the code below**********/
 }
 
 function getMilk(money) {
@@ -40,59 +40,59 @@ function getMilk(money) {
   console.log("enterHouse");
 }
 
-function bmiCalculator(weight, height){
-    return Math.round(weight/(height*height));
+function bmiCalculator(weight, height) {
+  return Math.round(weight / (height * height));
 }
 
 var name1 = prompt("input your name")
 var name2 = prompt("input her/his name")
 
-function loveCal(name1, name2){
-    var percentage = Math.floor(Math.random()*100) + 1;
-    return name1 + " and " + name2 + " is " + percentage + "%"
+function loveCal(name1, name2) {
+  var percentage = Math.floor(Math.random() * 100) + 1;
+  return name1 + " and " + name2 + " is " + percentage + "%"
 }
 
 loveCal(name1, name2);
 
-function bmiCalculator (weight, height) {
-     var bmi = Math.round(weight/Math.pow(height, 2));
-    console.log(bmi);
-     if(bmi > 24.9) {
-         return "Your BMI is " + bmi + ", so you are overweight"
-     }
-     if(bmi < 24.9 && bmi > 18.5) {
-         return "Your BMI is " + bmi + ", so you have a normal weight"
-     }
-     else {
-         return "Your BMI is " + bmi + ", so you are underweight"
-     }
+function bmiCalculator(weight, height) {
+  var bmi = Math.round(weight / Math.pow(height, 2));
+  console.log(bmi);
+  if (bmi > 24.9) {
+    return "Your BMI is " + bmi + ", so you are overweight"
+  }
+  if (bmi < 24.9 && bmi > 18.5) {
+    return "Your BMI is " + bmi + ", so you have a normal weight"
+  }
+  else {
+    return "Your BMI is " + bmi + ", so you are underweight"
+  }
 }
 
-bmiCalculator(prompt("weight"),prompt("height"));
+bmiCalculator(prompt("weight"), prompt("height"));
 
 function leapYear(year) {
-    // if (year % 4 !== 0 || year % 4 === 0 && year % 100 === 0 && year % 400 !== 0){
-    //     return "not a leap year"
-    // }
-    // if (year % 4 === 0 && year % 100 !== 0 || year % 4 === 0 && year % 100 === 0 && year % 400 === 0) {
-    //     return "a leap year"
-    // }
-    if (year % 400 === 0 || year % 4 === 0 && year % 100 !== 0){
-      return "leap year"
-    } else {
-      return "not a leap year"
-    }
+  // if (year % 4 !== 0 || year % 4 === 0 && year % 100 === 0 && year % 400 !== 0){
+  //     return "not a leap year"
+  // }
+  // if (year % 4 === 0 && year % 100 !== 0 || year % 4 === 0 && year % 100 === 0 && year % 400 === 0) {
+  //     return "a leap year"
+  // }
+  if (year % 400 === 0 || year % 4 === 0 && year % 100 !== 0) {
+    return "leap year"
+  } else {
+    return "not a leap year"
+  }
 }
 
 var guestList = ["Yu", "Beth", "Saitama", "Goku"];
 
 function approval(name) {
-    if (guestList.includes(name)){
-        alert("hi " + name + ", welcome!")
-    }
-    else{
-        alert("You're not on the guestlist")
-    }
+  if (guestList.includes(name)) {
+    alert("hi " + name + ", welcome!")
+  }
+  else {
+    alert("You're not on the guestlist")
+  }
 }
 
 approval(prompt("your name"));
@@ -100,43 +100,63 @@ approval(prompt("your name"));
 var output = [];
 var count = 1;
 
-function fizzBuzz(){
-    if (count % 5 === 0 && count % 3 === 0){
-        output.push("FizzBuzz")
-    } else if (count % 5 === 0){
-        output.push("Buzz")
-    } else if (count % 3 === 0){
-        output.push("Fizz")
-    } else {
-        output.push(count);
-    }
-    count++;
+function fizzBuzz() {
+  if (count % 5 === 0 && count % 3 === 0) {
+    output.push("FizzBuzz")
+  } else if (count % 5 === 0) {
+    output.push("Buzz")
+  } else if (count % 3 === 0) {
+    output.push("Fizz")
+  } else {
+    output.push(count);
+  }
+  count++;
 
-    console.log(output);
+  console.log(output);
 }
 
 var bottles = 99
 
 function bottlesDown() {
-    while(bottles > 1) {
-        var minusOne = bottles -1
-        console.log(bottles + " bottles of beer on the wall " + bottles + " bottles of beer, Take one down, pass it around " + minusOne + " bottles of beer on the wall");
-        bottles--;
-    }
-    console.log(bottles + " bottle of beer on the wall " + bottles + " bottle of beer Take one down, and pass it around, no more bottles of beer on the wall");
+  while (bottles > 1) {
+    var minusOne = bottles - 1
+    console.log(bottles + " bottles of beer on the wall " + bottles + " bottles of beer, Take one down, pass it around " + minusOne + " bottles of beer on the wall");
     bottles--;
-    console.log("No more bottles of beer on the wall, no more bottles of beer Go to the store and buy some more, 99 bottles of beer on the wall");
+  }
+  console.log(bottles + " bottle of beer on the wall " + bottles + " bottle of beer Take one down, and pass it around, no more bottles of beer on the wall");
+  bottles--;
+  console.log("No more bottles of beer on the wall, no more bottles of beer Go to the store and buy some more, 99 bottles of beer on the wall");
 }
 
-function fibonacciGenerator (n) {
+function fibonacciGenerator(n) {
 
-    var arr = [0];
-    var number = 1;
+  var arr = [0];
+  var number = 1;
 
-    while(n !== arr.length) {
-        arr.push(number)
-        number += arr[arr.length - 2]
-    }
+  while (n !== arr.length) {
+    arr.push(number)
+    number += arr[arr.length - 2]
+  }
 
-    return arr
+  return arr
+}
+
+function add(num1, num2) {
+  return num1 + num2
+}
+undefined
+function substract(num1, num2) {
+  return num1 - num2
+}
+undefined
+function multiply(num1, num2) {
+  return num1 * num2
+}
+undefined
+function divide(num1, num2) {
+  return num1 / num2
+}
+undefined
+function cal(num1, num2, operator) {
+  return operator(num1, num2)
 }
