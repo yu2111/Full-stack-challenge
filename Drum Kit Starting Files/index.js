@@ -14,7 +14,17 @@ for (let i = 0; i < numberOfDrums; i++) {
   document.querySelectorAll(".drum")[i].addEventListener("click", function() {
     const buttonLetter = this.innerHTML;
 
-    switch (buttonLetter) {
+    makeSound(buttonLetter);
+
+ })
+}
+
+document.addEventListener("keydown", (event)=>{
+  makeSound(event.key);
+})
+
+function makeSound(key) {
+  switch (key) {
       case "w":
         const tom1 = new Audio("./sounds/tom-1.mp3");
         tom1.play();
@@ -55,5 +65,5 @@ for (let i = 0; i < numberOfDrums; i++) {
         console.log("not drum");
         break;
     }
- })
+
 }
