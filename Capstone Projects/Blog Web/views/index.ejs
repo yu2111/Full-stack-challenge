@@ -9,8 +9,21 @@
 </head>
 <body>
   <%- include("partials/navbar.ejs") %>
-  <div class="container">
-    <h1>No blogs yet. Start <a href="/write">writing</a></h1>
+  <div class="container text-center mt-5">
+
+    <% if (locals.blogs && blogs.length > 0) { %>
+      <h1>Blogs</h1>
+     <% blogs.forEach(blog => { %>
+      <div class="card-product">
+        <div class="card-product-infos">
+          <h2><%= blog.title %></h2>
+          <p><%= blog.blog %></p>
+        </div>
+      </div>
+     <% }); %>
+    <% } else { %>
+      <h1>No blogs yet. Start <a href="/write">writing</a>!</h1>
+    <% } %>
   </div>
 </body>
 </html>
