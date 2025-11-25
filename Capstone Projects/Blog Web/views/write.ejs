@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"/>
+    <title>Food Blog</title>
+  </head>
+  <body>
+    <%- include("partials/navbar.ejs") %>
+    <div class="container px-5 mt-3">
+      <form action="/submit" method="POST">
+        <label class="form-label">Title</label>
+        <input type="text" class="form-control mb-3" name="title" placeholder="title">
+        <label class="form-label"> Write your blog here </label>
+        <textarea class="form-control mb-3" name="blog" rows="3"></textarea>
+        <input class="btn btn-warning mb-3" type="submit" value="POST">
+      </form>
+    </div>
+  </body>
+</html>
